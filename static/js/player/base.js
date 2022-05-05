@@ -235,9 +235,6 @@ export class Player extends GameObject {
     update() {
         if (this.root.game_map.time_left !== 0 && !this.root.game_map.winner) {
             this.update_control();
-        } else {
-            this.vx = 0;
-            this.status = 0;
         }
 
         if (this.status !== 6) {
@@ -286,6 +283,13 @@ export class Player extends GameObject {
             } else {
                 this.status = 0;
             }
+        }
+
+        if(this.root.game_map.time_left === 0 && !this.root.game_map.winner){
+            this.vx = 0;
+            this.status = 0;
+        }else if(this.root.game_map.winner){
+            this.vx = 0;
         }
 
         this.total_frame_cnt++;

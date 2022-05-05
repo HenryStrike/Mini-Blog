@@ -33,7 +33,7 @@ export class GameMap extends GameObject {
         `));
 
         // initialize timer
-        this.time_left = 5000;
+        this.time_left = 60000;
         this.$timer = this.root.$kof.find(`.kof-head>.kof-head-timer`);
 
         // end of game?
