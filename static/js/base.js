@@ -1,5 +1,5 @@
-import { GameMap } from "/static/js/game_map/base.js";
-import { Kyo } from "/static/js/player/kyo.js";
+import { GameMap } from "./game_map/base.js";
+import { Kyo } from "./player/kyo.js";
 
 class KOF {
     constructor(id) {

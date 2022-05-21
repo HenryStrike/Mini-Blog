@@ -1,5 +1,5 @@
-import { GameObject } from "/static/js/game_object/base.js";
-import { is_collision } from "/static/js/utils/collision.js";
+import { GameObject } from "../game_object/base.js";
+import { is_collision } from "../utils/collision.js";
 
 export class Player extends GameObject {
     constructor(root, info) {

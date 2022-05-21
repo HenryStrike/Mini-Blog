@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import Content from './base';
+import TimeLine from './homePage/timeline';
+import UserProfile from './homePage/userProfile';
+import EditPost from './homePage/editPost';
 
 class Home extends Component {
     state = {  } 
     render() { 
         return (
             <Content>
-                <h5 className="card-title">Home Page</h5>
-                <h6 className="card-subtitle mb-2 text-muted">Still working</h6>
-                <p className="card-text">Welcome all !!</p>
-                <a href="https://github.com/HenryStrike" className="card-link">Github</a>
+                <div className="row">
+                    <div className="col-3">
+                        <UserProfile/>
+                        <EditPost/>
+                    </div>
+                    <div className="col-9">
+                        <TimeLine/>
+                    </div>
+                </div>
             </Content>
         );
     }

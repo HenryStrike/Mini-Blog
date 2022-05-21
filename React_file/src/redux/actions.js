@@ -4,6 +4,9 @@ const ACTIONS = {
     CHOOSE_OPERATION: "choose_operation",
     CLEAR: "clear",
     EVALUATE: "elvaluate",
+
+    SUBMIT_A_POST: "submit_a_post",
+    DELETE_A_POST: "delete_a_post",
 };
 
 export default ACTIONS;

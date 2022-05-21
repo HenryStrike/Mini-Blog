@@ -58,9 +58,9 @@ class Calculator extends Component {
 
 const mapStateToProps = (state, props) =>{
     return{
-        currentOperand: state.current_operand,
-        lastOprand: state.last_operand,
-        Operation: state.operation,
+        currentOperand: state.calculator.current_operand,
+        lastOprand: state.calculator.last_operand,
+        Operation: state.calculator.operation,
     };
 }
 

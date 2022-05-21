@@ -1,8 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit"
-import calculator  from "./reducer"
+import calculator  from "./calculatorReducer"
+import homePage from "./homeReducer"
+import { combineReducers } from "redux";
+
+const creducer = combineReducers({
+    calculator: calculator,
+    homePage: homePage,
+});
 
 const store = configureStore({
-    reducer: calculator,
+    reducer: creducer,
 });
 
 export default store;

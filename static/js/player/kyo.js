@@ -1,5 +1,5 @@
-import { Player } from "/static/js/player/base.js"
-import { GIF } from "/static/js/utils/gif.js"
+import { Player } from "../player/base.js"
+import { GIF } from "../utils/gif.js"
 
 export class Kyo extends Player {
     constructor(root, info) {
@@ -22,7 +22,7 @@ export class Kyo extends Player {
 
         for (let i = 0; i < 8; i++) {
             let gif = GIF();
-            gif.load(`/static/images/player/kyo/${i}.gif`);
+            gif.load(`/images/player/kyo/${i}.gif`);
 
             this.animations.set(i, {
                 gif: gif,
