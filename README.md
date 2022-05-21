@@ -1,7 +1,8 @@
-#Mini Blog
-##Small features:
+# Mini Blog
+## Small features:
 1 king of fighters JS version
-2 mini posting system
+2 Mini posting system
+3 More functions to develop: with Spring boot and Database
 
 #### Demo of mini blog
 
