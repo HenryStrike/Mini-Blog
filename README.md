@@ -1,4 +1,7 @@
-# King-of-Fighters-JS
+#Mini Blog
+##Small features:
+1 king of fighters JS version
+2 mini posting system
 
 #### Demo of mini blog
 
