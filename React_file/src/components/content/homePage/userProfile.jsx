@@ -5,7 +5,7 @@ class UserProfile extends Component {
     render() { 
         return (
             <div className="card">
-                <img src="./logo512.png" className="card-img-top" alt="UserIcon"/>
+                <img src="http://175.178.193.39:8080/images/logo512.png" className="card-img-top" alt="UserIcon"/>
                 <div className="card-body">
                     <h5 className="card-title">Timeline Space</h5>
                     <p className="card-text">This is the area you can post your own thoughts freely!</p>

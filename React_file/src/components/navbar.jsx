@@ -14,10 +14,10 @@ class NavBar extends Component {
                     <div className="collapse navbar-collapse" id="navbarText">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                            <Link className="nav-link" to="/home">Home</Link>
+                            <Link className="nav-link" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="/playground">Game</a>
+                            <Link className="nav-link" to="/playground">Game</Link>
                             </li>
                             <li className="nav-item">
                             <Link className="nav-link" to="/calculator">Calculator</Link>
@@ -33,7 +33,7 @@ class NavBar extends Component {
                         </ul>
                     </div>
                 </div>
-                </nav>
+            </nav>
         );
     }
 }

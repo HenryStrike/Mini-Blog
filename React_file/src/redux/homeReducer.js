@@ -15,6 +15,9 @@ const homePage = (state={
 }, action) =>{
     switch(action.type){
         case ACTIONS.SUBMIT_A_POST:
+            if(action.content===""){
+                return state;
+            }
             return {
                 ...state,
                 posts: [
