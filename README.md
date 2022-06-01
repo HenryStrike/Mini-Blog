@@ -20,4 +20,5 @@
 
 #### Log V0.3:
 
-    Combine the seperate modules together.
+    1 : Combine the seperate modules together.
+    2 : Add a new Snake Game and add game selector.

@@ -7,6 +7,12 @@ const ACTIONS = {
 
     SUBMIT_A_POST: "submit_a_post",
     DELETE_A_POST: "delete_a_post",
+
+    UPDATE_SCORE : "update_score",
+    RESTART_UPDATE : "restart_update",
+
+    SELECTKOF : "select_kof",
+    SELECTSNAKE : "selct_snake",
 };
 
 export default ACTIONS;

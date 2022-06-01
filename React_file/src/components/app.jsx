@@ -7,7 +7,7 @@ import Login from './content/login';
 import Register from './content/register';
 import NotFound from './content/notFound';
 import { Navigate } from 'react-router-dom';
-import PlayGround from './playground';
+import PlayGround from './content/playground';
 
 
 

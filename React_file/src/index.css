@@ -54,6 +54,11 @@ body {
   font-size: 3rem;
 }
 
+.GameView{
+  display: flex;
+  justify-content: center;
+}
+
 #kof {
   width: 1280px;
   height: 720px;
@@ -146,4 +151,93 @@ body {
   line-height: 720px;
   font-size: 0;
   color: white;
+}
+
+.App{
+  width: 100vh;
+  height: 60.5vh;
+}
+
+.background{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(101, 146, 62);
+}
+
+.score-bar{
+  height: 8vh;
+  width: 100%;
+  background-color: rgb(22, 102, 15);
+  display: flex;
+  justify-content: space-around;
+  user-select: none;
+}
+
+.apple{
+  display: flex;
+  align-items: center;
+}
+
+.apple > img{
+  width: 6vh;
+  height: 6vh;
+}
+
+.apple > div{
+  color: white;
+  font-weight: bolder;
+  font-size: 3vh;
+  margin-left: 1vh;
+}
+
+.cup{
+  display: flex;
+  align-items: center;
+}
+
+.cup > img{
+  width: 5vh;
+  height: 5vh;
+}
+
+.cup > div{
+  color: gold;
+  font-weight: bolder;
+  font-size: 3vh;
+  margin-left: 1vh;
+}
+
+.game-map{
+  height: calc(100% - 8vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snake-canvas{
+  background-color: #AAD751;
+}
+
+.game-map > button{
+  position: absolute;
+}
+
+.gameintro{
+  font-size: large;
+  font-weight: bold;
+}
+
+.gameselect{
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}
+
+.gameselect > button{
+  height: 6vh;
+  width: 20vh;
+  font-size: 3vh;
+  font-weight: bolder;
+
 }
