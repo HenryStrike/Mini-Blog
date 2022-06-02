@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GameIntro from './gameIntro';
 import KOFGame from './kofGame';
-import SnakeGame from '../snakeGame';
+import SnakeGame from './snakeGame';
 import { connect } from 'react-redux';
 
 class PlayGround extends Component {

@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
-import {KOF} from './kof/base.js';
+import KOF from './kof/base.jsx';
 
 class KOFGame extends Component {
-    constructor(props){
-        super(props);
-        this.kof = React.createRef();
-        this.kof_gamemap = null;
-    }
-
-    componentDidMount() {
-        this.kof_gamemap = new KOF('kof');
-    }
-
     render() { 
         return (
-            <div id='kof' ref={this.kof}></div>
+            <KOF/>
         );
     }
 }

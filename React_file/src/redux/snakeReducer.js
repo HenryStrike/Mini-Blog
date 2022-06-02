@@ -10,7 +10,7 @@ const snakeGame = (state={
             return {
                 ...state,
                 score : action.val,
-                record : Math.max(action.val, state.score),
+                record : Math.max(action.val, state.record),
             };
         case ACTIONS.RESTART_UPDATE:
             return {

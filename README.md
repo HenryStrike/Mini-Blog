@@ -22,3 +22,4 @@
 
     1 : Combine the seperate modules together.
     2 : Add a new Snake Game and add game selector.
+    3 : Fix bugs and add a restart button in KOF game.

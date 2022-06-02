@@ -62,19 +62,12 @@ export class Player extends GameObject {
             this.total_frame_cnt = 0;
             this.vx = 0;
             this.root.game_map.winner = true;
-
-            // show KO tag
-            this.$kotag = this.root.$kof.find(`.kof-body`);
-            this.$kotag.css({
-                width: "100%",
-                height: "100%",
-            });
-            this.$kotag.animate({
-                "font-size": "300px"
-            });
         }
-
         // hp bar style
+        this.update_hp_bar();
+    }
+
+    update_hp_bar() {
         this.$hp_inner.animate({
             width: this.$hp.parent().width() * this.HP / this.maxHP
         }, 300);
@@ -233,7 +226,7 @@ export class Player extends GameObject {
     }
 
     update() {
-        if (this.root.game_map.time_left !== 0 && !this.root.game_map.winner) {
+        if (!this.root.game_map.winner) {
             this.update_control();
         }
 
@@ -285,6 +278,7 @@ export class Player extends GameObject {
             }
         }
 
+        // game over
         if(this.root.game_map.time_left === 0 && !this.root.game_map.winner){
             this.vx = 0;
             this.status = 0;

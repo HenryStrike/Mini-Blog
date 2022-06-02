@@ -6,10 +6,16 @@ import { connect } from 'react-redux';
 class GameIntro extends Component {
     
     selectKOF(){
+        if(!this.props.kofRestart){
+            this.props.update_kof(true);
+        }
         this.props.select_kof();
     }
 
     selectSnake(){
+        if(!this.props.snakeRestart){
+            this.props.update_snake(true);
+        }
         this.props.select_snake();
     }
 
@@ -26,13 +32,28 @@ class GameIntro extends Component {
     }
 }
 
+const mapStateToProps = (state, props) =>{
+    return {
+        kofRestart : state.kofGame.restart,
+        snakeRestart : state.snakeGame.restart,
+    };
+}
+
 const mapDispatchToProps = {
     select_kof : () => ({
-        type:ACTIONS.SELECTKOF,
+        type : ACTIONS.SELECTKOF,
     }),
     select_snake : () => ({
-        type:ACTIONS.SELECTSNAKE,
+        type : ACTIONS.SELECTSNAKE,
     }),
+    update_kof : (val) =>({
+        type : ACTIONS.KOFSTART,
+        val,
+    }),
+    update_snake : (val) =>({
+        type : ACTIONS.RESTART_UPDATE,
+        val,
+    })
 };
  
-export default connect(null, mapDispatchToProps)(GameIntro);
+export default connect(mapStateToProps, mapDispatchToProps)(GameIntro);

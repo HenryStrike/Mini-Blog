@@ -26,11 +26,6 @@ export class GameMap extends GameObject {
                 <div><div></div></div>
             </div>
         </div>
-        <div class="kof-body">
-            <div class="kof-body-KO">
-                K.O.
-            </div>
-        </div>
         `));
 
         // initialize timer
@@ -46,11 +41,15 @@ export class GameMap extends GameObject {
     }
 
     update() {
-        if(!this.winner){
+        // timer count to zero
+        if(!this.winner && this.time_left > 0){
             this.time_left -= this.timedelta;
+            this.time_left = Math.max(this.time_left, 0);
+            this.$timer.text(parseInt(this.time_left / 1000));
+        }else{
+            this.winner = true;
+            this.root.gameOver();
         }
-        this.time_left = Math.max(this.time_left, 0);
-        this.$timer.text(parseInt(this.time_left / 1000));
         this.render();
     }
 
